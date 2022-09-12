@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+      }
+      #portrait {
+        width: 100px;
+        height: 100px;
+        border: 4px solid black;
+      }
+
+      /* ======
+        SOCIAL
+        ====== */
+
+      .social-container,
+      #github-container,
+      #linkedin-container,
+      #email-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      .social-container {
+        width: 300px;
+        margin: 10px 0 0 0;
+      }
+
+      .icons,
+      .links {
+        padding: 2px;
+      }
+
+      .icons {
+        height: 25px;
+        width: 25px;
+      }
+
+      .links {
+        text-decoration: none;
+        color: black;
+      }
+      /* ===========
+        TECHNOLOGIES
+       ============ */
+      table,
+      tr,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      .tech-container {
+        margin: 5px 0 20px 0;
+      }
+      /* ===========
+      PROJECTS
+      ============ */
+      .project-img {
+        width: 300px;
+        height: 150px;
+      }
+
+      #project-container {
+        display: flex;
+        flex-direction: row;
+        height: 150px;
+      }
+      #project-description {
+        font-size: 0.7em;
+        margin: 0;
+      }
+
+      #link-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 150px;
+      }
+      /* ===========
+      CONTACT
+      ============ */
+      .contact {
+        display: flex;
+        flex-direction: row;
+        height: 30px;
+        align-items: center;
+      }
+      #message-field {
+        display: flex;
+        flex-direction: row;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Paul Yi</h1>
+    <img id="portrait" src="img/dwight.jpg" alt="me" />
+    <!-- SOCIAL LINKS -->
+    <div class="social-container">
+      <div id="github-container">
+        <img class="icons" src="img/github.png" alt="github icon" />
+        <a class="links" href="www.github.com/pauljsyi">github</a>
+      </div>
+      <div id="linkedin-container">
+        <img class="icons" src="img/linkedin.png" alt="github icon" />
+        <a class="links" href="www.linkedin.com/in/pauljsyi">linkedin</a>
+      </div>
+      <div id="email-container">
+        <img class="icons" src="img/email.png" alt="github icon" />
+        <a class="links" href="www.github.com/pauljsyi">email</a>
+      </div>
+    </div>
+
+    <!-- TECHNOLOGIES -->
+    <div class="tech-container">
+      <h3 style="margin-bottom: 0">Technologies</h3>
+      <table>
+        <tr>
+          <th>Front-End</th>
+          <th>Javascript</th>
+          <th>Database</th>
+          <th>Concepts</th>
+          <th>Other</th>
+        </tr>
+
+        <tr>
+          <td>HTML5</td>
+          <td>React</td>
+          <td>MongoDB</td>
+          <td>REST</td>
+          <td>AWS</td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>Express</td>
+          <td></td>
+          <td>OOP</td>
+          <td>Webpack</td>
+        </tr>
+        <tr>
+          <td>Bootstrap</td>
+          <td>Mongoose</td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Projects -->
+    <div class="container">
+      <div id="project-container">
+        <img class="project-img" src="img/paradigm.png" alt="" />
+        <article id="project-description">
+          <h3>PARADIGM GUITAR</h3>
+          <p>An e-commerce website for a boutique guitar store</p>
+          <p>
+            MERN application, MVC architecture, deployed with AWS EC2 and NGINX
+          </p>
+          <div id="link-container">
+            <a href="https://www.github.com/pauljsyi">
+              <img class="icons" src="img/github.png" alt="github icon" />
+            </a>
+            <p>|</p>
+            <a class="links" href="https://www.pauljsyi.com/paradigmguitar">
+              deployed
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div>
+      <h3>Contact Me</h3>
+      <form class="contact" action="">
+        <h5>Name:</h5>
+        <input type="text" />
+        <h5>Email:</h5>
+        <input type="text" />
+      </form>
+      <div id="message-field">
+        <h5>Message:</h5>
+        <textarea name="" id="" cols="43" rows="10"></textarea>
+      </div>
+      <button>Send Message</button>
+    </div>
+
+    <!-- HIDDEN ATTRIBUTE FOR ICONS -->
+    <div class="hidden" hidden>
+      <a href="https://www.flaticon.com/free-icons/github" title="github icons">
+        Github icons created by Freepik - Flaticon
+      </a>
+      <a
+        href="https://www.flaticon.com/free-icons/linkedin"
+        title="linkedin icons"
+      >
+        Linkedin icons created by Md Tanvirul Haque - Flaticon
+      </a>
+      <a href="https://www.flaticon.com/free-icons/email" title="email icons">
+        Email icons created by Uniconlabs - Flaticon
+      </a>
+    </div>
+  </body>
+</html>
